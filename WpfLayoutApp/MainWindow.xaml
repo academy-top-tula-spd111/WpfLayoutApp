@@ -1,0 +1,123 @@
+﻿<Window x:Class="WpfLayoutApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLayoutApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--
+    <StackPanel Orientation="Horizontal"
+                FlowDirection="LeftToRight"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                >
+        <Button Background="Red"
+                FontSize="26"
+                VerticalAlignment="Top">1</Button>
+        <Button Background="Blue"
+                FontSize="26">2</Button>
+        <Button Background="Green"
+                FontSize="26">3</Button>
+    </StackPanel>
+    -->
+    <!--
+    <DockPanel LastChildFill="False">
+        <Button Background="Red"
+                FontSize="26"
+                DockPanel.Dock="Left">1</Button>
+        <Button Background="Blue"
+                FontSize="26"
+                DockPanel.Dock="Top"
+                Height="100">2</Button>
+        <Button Background="Green"
+                FontSize="26"
+                DockPanel.Dock="Right">3</Button>
+    </DockPanel>
+    -->
+    <!--
+    <WrapPanel Orientation="Horizontal"
+               ItemHeight="150"
+               ItemWidth="300">
+        <Button Background="Red"
+                >1</Button>
+        <Button Background="Blue"
+                >1</Button>
+        <Button Background="Green"
+                >1</Button>
+        <Button Background="Yellow"
+                >1</Button>
+        <Button Background="Magenta"
+                >1</Button>
+                
+    </WrapPanel>
+    -->
+    <!--
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="1"
+                Grid.RowSpan="1"></Button>
+
+        <GridSplitter Grid.Column="2" 
+                      Grid.RowSpan="3"
+                      Width="5"
+                      Background="Red"
+                      ShowsPreview="True"/>
+    </Grid>
+    -->
+    <!--
+    <UniformGrid Width="300"
+                 Height="300"
+                 Rows="4"
+                 Columns="3">
+        <Button>1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+        <Button>5</Button>
+        <Button>6</Button>
+        <Button>7</Button>
+        <Button>8</Button>
+        <Button>9</Button>
+        <Button>.</Button>
+        <Button>0</Button>
+        <Button>-</Button>
+    </UniformGrid>
+    -->
+    <!--
+    <Canvas>
+        <Button Width="200" 
+                Height="50"
+                Canvas.Top="50"
+                Canvas.Right="100"/>
+    </Canvas>
+    -->
+    <Grid>
+        <Button Width="200" 
+                Height="100" 
+                Background="Red"
+                Panel.ZIndex="2"/>
+        <Button Width="200" 
+                Height="100" 
+                Background="Blue"
+                Margin="338,199,262,135"
+                Panel.ZIndex="1"/>
+        <Button Width="200" 
+                Height="100" 
+                Background="Green" Margin="382,230,218,104"
+                />
+    </Grid>
+</Window>
